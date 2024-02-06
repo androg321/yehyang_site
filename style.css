@@ -9,7 +9,7 @@ html {
 
 * {
   box-sizing: border-box;
-  font-family: GamjaFlower-Regular;
+  /* font-family: GamjaFlower-Regular; */
 }
 
 body {
@@ -30,6 +30,7 @@ body {
 }
 
 .main button {
+  font-family: GamjaFlower-Regular;
   border: none;
   border-radius: 10px;
   height: 20%;
@@ -58,5 +59,6 @@ body {
     height: 80px;
     width: 100%;
     margin: 10px;
+    color: black;
   }
 }
