@@ -53,6 +53,7 @@ body {
     height: 100vh;
     background-color: #ffe4c9;
     justify-content: center;
+    align-items: center;
   }
 
   .main button {

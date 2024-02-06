@@ -52,6 +52,10 @@ th {
   background-color: #e78895;
 }
 
+th:first-child {
+  width: 10px;
+}
+
 @media (max-width: 800px) {
   .main {
     width: 100%;
