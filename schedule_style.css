@@ -20,13 +20,13 @@ body {
   display: flex;
   width: 100%;
   height: 100vh;
-  background-color: #ffe4c9;
+  background-color: #92c7cf;
   align-items: center;
   justify-content: center;
 }
 
 .main {
-  display: flex;
+  display: block;
   width: 50%;
   height: 90%;
   border-radius: 30px;
@@ -36,45 +36,62 @@ body {
 }
 
 .date {
+  margin: 30px;
+  text-align: center;
   font-size: 1.5em;
   font-weight: 600;
 }
 
-table,
-td,
-tr {
-  border-style: solid;
-  border: 1px solid #bed1cf;
+.schedule {
+  margin: 20px;
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
   border-collapse: collapse;
-  width: 90%;
-  font-size: 1.2em;
 }
 
 th {
-  border-style: solid;
-  border: 1px solid #bed1cf;
-  border-collapse: collapse;
-  background-color: #e78895;
+  height: 100px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  font-size: 2em;
+  font-weight: 700;
+  background-color: #92c7cf;
 }
 
-th:first-child,
-td:first-child {
-  width: 80%;
+td {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: left;
+  padding: 20px;
+}
+
+.day {
+  width: 20px;
 }
 
 @media (max-width: 800px) {
   .main {
     width: 100%;
     height: 100vh;
-    background-color: #ffe4c9;
+    background-color: white;
+    border-radius: 0;
+  }
+
+  .date {
+    margin-top: 100px;
   }
 
   table {
     background-color: white;
   }
 
-  th:first-child,
-  td:first-child {
-    width: 80%;
+  td {
+    font-size: 1em;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px;
   }
 }
