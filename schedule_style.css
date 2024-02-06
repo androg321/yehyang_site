@@ -76,6 +76,7 @@ td {
     background-color: #f2efe5;
     border-radius: 0;
     border: none;
+    margin: 20px;
   }
 
   .schedule {
@@ -84,7 +85,7 @@ td {
   }
 
   .date {
-    margin-top: 70px;
+    margin-top: 50px;
     font-weight: 700;
   }
 
