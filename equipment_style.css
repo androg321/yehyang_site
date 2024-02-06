@@ -52,8 +52,9 @@ th {
   background-color: #e78895;
 }
 
-th:first-child {
-  width: 10px;
+th:first-child,
+td:first-child {
+  width: 80%;
 }
 
 @media (max-width: 800px) {
@@ -63,10 +64,12 @@ th:first-child {
     background-color: #ffe4c9;
   }
 
-  .main button {
-    height: 80px;
-    width: 100%;
-    margin: 10px;
-    color: black;
+  table {
+    background-color: white;
+  }
+
+  th:first-child,
+  td:first-child {
+    width: 80%;
   }
 }
