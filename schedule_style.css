@@ -27,8 +27,7 @@ body {
 
 .main {
   display: block;
-  width: 50%;
-  height: 90%;
+  width: 40%;
   border-radius: 30px;
   background-color: white;
   align-items: center;
@@ -93,5 +92,10 @@ td {
     font-weight: 600;
     text-align: left;
     padding: 10px;
+  }
+
+  .date {
+    font-size: 1em;
+    font-weight: 100;
   }
 }
