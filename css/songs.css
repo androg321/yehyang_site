@@ -1,0 +1,105 @@
+@font-face {
+  font-family: GamjaFlower-Regular;
+  src: url(../font/GamjaFlower-Regular.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: GamjaFlower-Regular;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  background-color: #92c7cf;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: block;
+  width: 50%;
+  height: 90%;
+  border-radius: 30px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+table,
+tr {
+  margin-top: 50px;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.2em;
+  padding: 20px;
+  font-weight: 500;
+}
+
+td {
+  border-bottom: 1px solid #54706d;
+  border-collapse: collapse;
+  width: 90%;
+  font-size: 1.2em;
+  padding: 20px;
+  padding-left: 40px;
+}
+
+td:first-child {
+  width: 60%;
+  font-weight: 600;
+  cursor: default;
+}
+td:nth-child(2),
+td:nth-child(3) {
+  width: 20%;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #5b7d83;
+}
+
+@media (max-width: 800px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background-color: #f6f4eb;
+  }
+
+  table {
+    background-color: white;
+  }
+
+  td {
+    padding: 10px;
+  }
+
+  td:first-child {
+    width: 60%;
+    font-weight: 500;
+    font-size: 1em;
+  }
+
+  td:nth-child(2),
+  td:nth-child(3) {
+    font-size: 0.6em;
+  }
+}
