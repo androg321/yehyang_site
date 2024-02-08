@@ -76,12 +76,12 @@ td {
     background-color: #f2efe5;
     border-radius: 0;
     border: none;
-    margin: 20px;
+    margin: 0;
   }
 
   .schedule {
-    border: 3px solid #7b7b7e;
-    border-radius: 20px;
+    width: 100%;
+    margin: 0px;
   }
 
   .date {
@@ -91,11 +91,10 @@ td {
 
   table {
     background-color: white;
-    border-radius: 20px;
   }
 
   th {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 600;
   }
 
