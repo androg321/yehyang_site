@@ -74,6 +74,7 @@ td:nth-child(3) {
   font-weight: 600;
   font-size: 0.9em;
   color: #5b7d83;
+  text-align: center;
 }
 
 @media (max-width: 800px) {
@@ -82,6 +83,10 @@ td:nth-child(3) {
     height: 100%;
     border-radius: 0;
     background-color: #f6f4eb;
+  }
+
+  .title {
+    font-weight: 400;
   }
 
   table {
