@@ -150,10 +150,6 @@ td:nth-child(3) {
     font-size: 0.6em;
   }
 
-  .modal {
-    height: 100vh;
-  }
-
   .modal-content {
     display: flex;
     flex-direction: column-reverse;
