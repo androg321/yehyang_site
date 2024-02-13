@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/songs.css" />
-    <title>Document</title>
+    <title>예향 다락방</title>
   </head>
   <body>
     <div class="container">
@@ -15,7 +15,7 @@
             <tr>
               <td>깊어진 삶을 주께</td>
               <td onclick="window.open('https://www.naver.com')">듣기</td>
-              <td>가사</td>
+              <td onclick="openModal('modal1')">가사</td>
             </tr>
             <tr>
               <td>나는 끌려 갑니다</td>
@@ -27,9 +27,96 @@
               <td onclick="window.open('https://www.naver.com')">듣기</td>
               <td>가사</td>
             </tr>
+            <tr>
+              <td>나의 한숨을 바꾸셨네</td>
+              <td onclick="window.open('https://www.naver.com')">듣기</td>
+              <td>가사</td>
+            </tr>
+            <tr>
+              <td>낮은 곳으로</td>
+              <td onclick="window.open('https://www.naver.com')">듣기</td>
+              <td>가사</td>
+            </tr>
+            <tr>
+              <td>나는 노래하네</td>
+              <td onclick="window.open('https://www.naver.com')">듣기</td>
+              <td>가사</td>
+            </tr>
+            <tr>
+              <td>내 평생에 가는 길</td>
+              <td onclick="window.open('https://www.naver.com')">듣기</td>
+              <td>가사</td>
+            </tr>
+            <tr>
+              <td>높은 산들 흔들리고</td>
+              <td onclick="window.open('https://www.naver.com')">듣기</td>
+              <td>가사</td>
+            </tr>
+            <tr>
+              <td>다시 밤이 없겠고</td>
+              <td onclick="window.open('https://www.naver.com')">듣기</td>
+              <td>가사</td>
+            </tr>
+            <tr>
+              <td>목마른 사슴이</td>
+              <td onclick="window.open('https://www.naver.com')">듣기</td>
+              <td>가사</td>
+            </tr>
+            <tr>
+              <td>바다에 길을, 하늘에 빛을</td>
+              <td onclick="window.open('https://www.naver.com')">듣기</td>
+              <td>가사</td>
+            </tr>
+            <tr>
+              <td>살아낸 만큼, 사랑한 만큼</td>
+              <td onclick="window.open('https://www.naver.com')">듣기</td>
+              <td>가사</td>
+            </tr>
+            <tr>
+              <td>시편 139편</td>
+              <td onclick="window.open('https://www.naver.com')">듣기</td>
+              <td>가사</td>
+            </tr>
+            <tr>
+              <td>우리 살아가는 모든 날들이</td>
+              <td onclick="window.open('https://www.naver.com')">듣기</td>
+              <td>가사</td>
+            </tr>
+            <tr>
+              <td>우리가 서로 사랑하자</td>
+              <td onclick="window.open('https://www.naver.com')">듣기</td>
+              <td>가사</td>
+            </tr>
           </table>
         </div>
       </div>
     </div>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h5>by Dbstjrr</h5>
+      </div>
+    </div>
+    <script>
+      function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "block";
+      }
+
+      function closeModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        var modals = document.getElementsByClassName("modal");
+        for (var i = 0; i < modals.length; i++) {
+          var modal = modals[i];
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        }
+      };
+    </script>
   </body>
 </html>
