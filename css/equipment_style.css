@@ -134,6 +134,7 @@ td:first-child {
 
   .tab label {
     border-radius: 0 0 0 0;
+    font-weight: 200;
   }
 
   table {
