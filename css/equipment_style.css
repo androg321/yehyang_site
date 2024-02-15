@@ -120,6 +120,12 @@ td:first-child {
   width: 80%;
 }
 
+.category {
+  font-size: 0.8em;
+  background-color: #969f9e;
+  color: white;
+}
+
 @media (max-width: 800px) {
   .main {
     width: 100%;
