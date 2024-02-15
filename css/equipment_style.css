@@ -1,7 +1,7 @@
-/* @font-face {
+@font-face {
   font-family: GamjaFlower-Regular;
-  src: url(./font/GamjaFlower-Regular.ttf);
-} */
+  src: url(../font/GamjaFlower-Regular.ttf);
+}
 
 html {
   scroll-behavior: smooth;
@@ -27,7 +27,7 @@ body {
 }
 
 .main {
-  display: flex;
+  display: block;
   width: 50%;
   height: 90%;
   border-radius: 30px;
@@ -36,22 +36,81 @@ body {
   justify-content: center;
 }
 
-table,
+.main input[type="radio"] {
+  display: none;
+}
+#tab-1:checked ~ .tab label:nth-child(1),
+#tab-2:checked ~ .tab label:nth-child(2),
+#tab-3:checked ~ .tab label:nth-child(3),
+#tab-4:checked ~ .tab label:nth-child(4) {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+}
+.content > div {
+  display: none;
+}
+#tab-1:checked ~ .content div:nth-child(1),
+#tab-2:checked ~ .content div:nth-child(2),
+#tab-3:checked ~ .content div:nth-child(3),
+#tab-4:checked ~ .content div:nth-child(4) {
+  display: block;
+}
+/* .main {
+  margin: 0 auto;
+  min-width: 1380px;
+  max-width: 100%;
+} */
+.tab {
+  overflow: hidden;
+}
+.tab label {
+  font-family: GamjaFlower-Regular;
+  font-size: 1.4em;
+  cursor: pointer;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  user-select: none;
+  border-radius: 30px 30px 0 0;
+  -webkit-user-select: none;
+}
+.content {
+  height: 90%;
+}
+.content > div {
+  padding: 30px;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+table {
+  width: 100%;
+  border: 3px solid #616d6c;
+}
+
 td,
 tr {
   border-style: solid;
-  border: 1px solid #54706d;
-  border-collapse: collapse;
+  border: none;
+  /* border-collapse: collapse; */
   width: 90%;
   font-size: 1.2em;
-  padding: 20px;
+  /* padding: 20px; */
+}
+
+td {
+  border-bottom: 1px solid #616d6c;
 }
 
 th {
   border-style: solid;
-  border: 1px solid #bed1cf;
-  border-collapse: collapse;
-  background-color: #4682a9;
+  border: none;
+  /* border-collapse: collapse; */
+  background-color: #616d6c;
   padding: 10px;
   color: white;
 }
@@ -69,9 +128,18 @@ td:first-child {
     background-color: #f6f4eb;
   }
 
+  .content > div {
+    padding: 0;
+  }
+
+  .tab label {
+    border-radius: 0 0 0 0;
+  }
+
   table {
     background-color: white;
     width: 100%;
+    border: none;
   }
 
   td {
