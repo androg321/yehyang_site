@@ -84,7 +84,7 @@ body {
 .content > div {
   padding: 30px;
   line-height: 1.5;
-  font-size: 17px;
+  font-size: 1em;
 }
 
 table {
@@ -98,12 +98,12 @@ tr {
   border: none;
   /* border-collapse: collapse; */
   width: 90%;
-  font-size: 1.2em;
   /* padding: 20px; */
 }
 
 td {
   border-bottom: 1px solid #616d6c;
+  font-size: 1em;
 }
 
 th {
