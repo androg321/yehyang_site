@@ -20,7 +20,7 @@ body {
   display: flex;
   width: 100%;
   height: auto;
-  background-color: #92c7cf;
+  background-color: #f2efe5;
   align-items: center;
   justify-content: center;
 }
@@ -39,7 +39,7 @@ body {
 .title {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
+  padding-top: 50px;
   font-size: 1.6em;
   font-weight: 600;
 }
@@ -142,6 +142,7 @@ td:nth-child(3) {
 
   table {
     background-color: white;
+    margin-bottom: 50px;
   }
 
   td {

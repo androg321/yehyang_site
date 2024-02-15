@@ -18,7 +18,7 @@ body {
 
 .container {
   display: flex;
-  background-color: #92c7cf;
+  background-color: #f2efe5;
   align-items: center;
   justify-content: center;
 }
@@ -31,7 +31,7 @@ body {
   background-color: white;
   align-items: center;
   justify-content: center;
-  border: 3px solid #7b7b7e;
+  /* border: 3px solid #7b7b7e; */
 }
 
 .date {
