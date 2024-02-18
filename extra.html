@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/extra.css" />
+    <title>예향 다락방</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <input type="radio" id="tab-1" name="show" checked />
+        <input type="radio" id="tab-2" name="show" />
+        <!-- <input type="radio" id="tab-3" name="show" />
+        <input type="radio" id="tab-4" name="show" /> -->
+        <div class="tab">
+          <label for="tab-1">경찬</label>
+          <label for="tab-2">일정</label>
+          <!-- <label for="tab-3">싱어</label>
+          <label for="tab-4">엔지니어</label> -->
+        </div>
+        <div class="content">
+          <div class="content-dis">
+            <div class="table">
+              <table>
+                <tr>
+                  <td>깊어진 삶을 주께</td>
+                  <td
+                    onclick="window.open('https://youtu.be/GaX6NSzwpmw?feature=shared')"
+                  >
+                    듣기
+                  </td>
+                  <td onclick="openModal('modal1')">가사</td>
+                </tr>
+                <tr>
+                  <td>낮은 곳으로</td>
+                  <td
+                    onclick="window.open('https://youtu.be/RexmLSzodoc?feature=shared')"
+                  >
+                    듣기
+                  </td>
+                  <td onclick="openModal('modal5')">가사</td>
+                </tr>
+                <tr>
+                  <td>다시 밤이 없겠고</td>
+                  <td
+                    onclick="window.open('https://youtu.be/Wmv0uRU15AQ?feature=shared')"
+                  >
+                    듣기
+                  </td>
+                  <td onclick="openModal('modal9')">가사</td>
+                </tr>
+                <tr>
+                  <td>목마른 사슴이</td>
+                  <td
+                    onclick="window.open('https://youtu.be/zlARGeUWd5o?feature=shared')"
+                  >
+                    듣기
+                  </td>
+                  <td onclick="openModal('modal10')">가사</td>
+                </tr>
+                <tr>
+                  <td>살아낸 만큼, 사랑한 만큼</td>
+                  <td
+                    onclick="window.open('https://youtu.be/DkfJzfh9TZs?feature=shared')"
+                  >
+                    듣기
+                  </td>
+                  <td onclick="openModal('modal12')">가사</td>
+                </tr>
+                <tr>
+                  <td>시편 139편</td>
+                  <td
+                    onclick="window.open('https://youtu.be/8eS0wYhwbos?feature=shared')"
+                  >
+                    듣기
+                  </td>
+                  <td onclick="openModal('modal13')">가사</td>
+                </tr>
+                <tr style="border-bottom: none">
+                  <td>하늘 위에 주님밖에</td>
+                  <td
+                    onclick="window.open('https://youtu.be/uZ1G44GuJtY?feature=shared')"
+                  >
+                    듣기
+                  </td>
+                  <td onclick="openModal('modal22')">가사</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- 일정 -->
+          <div class="content-dis">
+            <img src="./sch.png" alt="schedule" />
+          </div>
+          <!-- 싱어 -->
+          <div class="content-dis"></div>
+          <!-- 엔지니어 -->
+          <div class="content-dis"></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <div class="close" onclick="closeModal('modal1')">&times;</div>
+        <div class="lyrics">
+          <h5>
+            은혜로 날 보듬으시고<br />
+            사랑으로 품어 주셔도<br />
+            내 마음 한 자락도 지키지 못하는<br />
+            이 모습 부끄럽습니다<br /><br />
+
+            따스한 곁을 내어주신<br />
+            주님 앞에 나아갑니다<br />
+            표현 못 할 긍휼로 나를 붙드시는 주<br />
+            이름만 바라봅니다<br /><br />
+
+            매일 마주한 슬픔을 견뎌 나가며<br />
+            주 예수의 마음을 닮아가네<br />
+            두려운 걸음마다 주가 동행하니<br />
+            주 의지하며 오늘을 걷네<br /><br />
+
+            주의 신실한 소망을 깊이 담으며<br />
+            주 예수의 풍요를 채워가네<br />
+            하나님의 자녀로 명예 지켜가며<br />
+            깊어진 삶을 주께 드리네 <br /><br />
+
+            inter<br /><br />
+
+            따스한 곁을 내어주신<br />
+            주님 앞에 나아갑니다<br />
+            표현 못 할 긍휼로 나를 붙드시는<br />
+            주 이름만 바라봅니다<br /><br />
+
+            매일 마주한 슬픔을 견뎌 나가며<br />
+            주 예수의 마음을 닮아가네<br />
+            두려운 걸음마다 주가 동행하니<br />
+            주 의지하며 오늘을 걷네<br /><br />
+
+            주의 신실한 소망을 깊이 담으며<br />
+            주 예수의 풍요를 채워가네<br />
+            하나님의 자녀로 명예 지켜가며<br />
+            깊어진 삶을 주께 드리네<br /><br />
+
+            매일 마주한 슬픔을 견뎌 나가며<br />
+            주 예수의 마음을 닮아가네<br />
+            두려운 걸음마다 주가 동행하니<br />
+            주 의지하며 오늘을 걷네<br /><br />
+
+            주의 신실한 소망을 깊이 담으며<br />
+            주 예수의 풍요를 채워가네<br />
+            하나님의 자녀로 명예 지켜가며<br />
+            깊어진 삶을 주께 드리네<br /><br />
+
+            매일 마주한 슬픔을 견뎌 나가며<br />
+            주 예수의 마음을 닮아가네<br />
+            두려운 걸음마다 주가 동행하니<br />
+            주 의지하며 오늘을 걷네<br /><br />
+
+            주의 신실한 소망을 깊이 담으며<br />
+            주 예수의 풍요를 채워가네<br />
+            하나님의 자녀로 명예 지켜가며<br />
+            깊어진 삶을 주께 드리네<br /><br />
+
+            하나님의 자녀로 명예 지켜가며<br />
+            깊어진 삶을 주께 드리네
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <div class="close" onclick="closeModal('modal5')">&times;</div>
+        <div class="lyrics">
+          <h5>
+            우리의 섬김이 더 낮은 곳으로<br />
+            우리의 고백이 더 낮은 곳으로<br />
+            쓰러져 있는 그들을 향해<br />
+            당신이 그랬듯 더 낮은 곳으로<br /><br />
+
+            낮은 곳으로 우릴 초대하네<br />
+            함께하자고 말씀하시네<br />
+            우리도 예수 그 길을 따라<br />
+            함께 가길 원하네<br /><br />
+
+            inter<br /><br />
+
+            우리의 섬김이 더 낮은 곳으로<br />
+            우리의 고백이 더 낮은 곳으로<br />
+            쓰러져 있는 그들을 향해<br />
+            당신이 그랬듯 더 낮은 곳으로<br /><br />
+
+            낮은 곳으로 우릴 초대하네<br />
+            함께하자고 말씀하시네<br />
+            우리도 예수 그 길을 따라<br />
+            함께 가길 원하네<br /><br />
+
+            주님이 우리와 함께하시네<br />
+            십자가 피 흘린 예수의 손으로<br />
+            모든 아픔을 위로하시네<br />
+            우리에게 보여 주셨네<br /><br />
+
+            주님이 우리와 함께하시네<br />
+            십자가 피 흘린 예수의 손으로<br />
+            모든 아픔을 위로하시네<br />
+            우리에게 보여 주셨네<br /><br />
+
+            (piano)<br />
+            주님이 우리와 함께하시네<br />
+            십자가 피 흘린 예수의 손으로<br />
+            모든 아픔을 위로하시네<br />
+            우리에게 보여 주셨네<br />
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div id="modal9" class="modal">
+      <div class="modal-content">
+        <div class="close" onclick="closeModal('modal9')">&times;</div>
+        <div class="lyrics">
+          <h5>
+            오늘 우리 삶에 주의 일 행하시네<br />
+            실수가 없으신 완벽한 일하심으로<br />
+            마침내 그날에 주 약속 이루시네<br />
+            천지를 지으신 온전한 그 말씀으로<br /><br />
+
+            다시 밤이 없겠고 햇빛도 쓸데없으리<br />
+            하나님이 우리의 영원한 빛 되시네<br />
+            다시 눈물 없겠고 슬픔과 고통 없으리<br />
+            하나님과 우리가 영원히 함께 사네<br /><br />
+
+            inter<br /><br />
+
+            오늘 우리 삶에 주의 일 행하시네<br />
+            실수가 없으신 완벽한 일하심으로<br />
+            마침내 그날에 주 약속 이루시네<br />
+            천지를 지으신 온전한 그 말씀으로<br /><br />
+
+            다시 밤이 없겠고 햇빛도 쓸데없으리<br />
+            하나님이 우리의 영원한 빛 되시네<br />
+            다시 눈물 없겠고 슬픔과 고통 없으리<br />
+            하나님과 우리가 영원히 함께 사네<br /><br />
+
+            다시 밤이 없겠고 햇빛도 쓸데없으리<br />
+            하나님이 우리의 영원한 빛 되시네<br />
+            다시 눈물 없겠고 슬픔과 고통 없으리<br />
+            하나님과 우리가 영원히 함께 사네<br /><br />
+
+            (piano)<br />
+            다시 밤이 없겠고 햇빛도 쓸데없으리<br />
+            하나님이 우리의 영원한 빛 되시네<br />
+            다시 눈물 없겠고 슬픔과 고통 없으리<br />
+            하나님과 우리가 영원히 함께 사네<br />
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div id="modal10" class="modal">
+      <div class="modal-content">
+        <div class="close" onclick="closeModal('modal10')">&times;</div>
+        <div class="lyrics">
+          <h5>
+            목마른 사슴이<br />
+            시냇물 찾아 헤매듯<br />
+            내 영혼 주님을<br />
+            간절히 알기 원하네<br /><br />
+
+            구름이 걷히면<br />
+            희망의 태양 떠오듯<br />
+            주 사랑 내 삶을<br />
+            환하게 비춰주시네<br /><br />
+
+            주님의 사랑 날 찾아와<br />
+            어둔 내 눈 밝히시네<br />
+            영혼 기뻐 노래하네 주 볼 때<br /><br />
+
+            안전한 곳에 날 세우시네<br />
+            사슴처럼 뛰게 하네<br />
+            무엇을 하든 어딜 가든<br />
+            주 사랑 나를 인도하네<br /><br />
+
+            inter<br /><br />
+
+            목마른 사슴이<br />
+            시냇물 찾아 헤매듯<br />
+            내 영혼 주님을<br />
+            간절히 알기 원하네<br /><br />
+
+            구름이 걷히면<br />
+            희망의 태양 떠오듯<br />
+            주 사랑 내 삶을<br />
+            환하게 비춰주시네<br /><br />
+
+            주님의 사랑 날 찾아와<br />
+            어둔 내 눈 밝히시네<br />
+            영혼 기뻐 노래하네 주 볼 때<br /><br />
+
+            안전한 곳에 날 세우시네<br />
+            사슴처럼 뛰게 하네<br />
+            무엇을 하든 어딜 가든<br />
+            주 사랑 나를 인도하네<br /><br />
+
+            inter<br /><br />
+
+            말보다 일보다<br />
+            중심을 원하시는 주<br />
+            나 이제 주님만<br />
+            사랑하게 하소서<br /><br />
+
+            먼 훗날 주 앞에<br />
+            서는 날 주께 말하리<br />
+            사는 날 동안에<br />
+            주님만 사랑했다고<br /><br />
+
+            세상이 줄 수 없는 사랑<br />
+            내 맘 고동치게 하네<br />
+            주 곁에 날 이끄소서 오 주님<br /><br />
+
+            주님 보기를 만져보기를<br />
+            주님 품에 안겨보기를<br />
+            나 이제 평생 사는 동안 주님만<br /><br />
+
+            주님의 사랑 날 찾아와<br />
+            어둔 내 눈 밝히시네<br />
+            영혼 기뻐 노래하네 주 볼 때<br /><br />
+
+            안전한 곳에 날 세우시네<br />
+            사슴처럼 뛰게 하네<br />
+            무엇을 하든 어딜 가든<br />
+            주 사랑 나를 인도하네<br /><br />
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div id="modal12" class="modal">
+      <div class="modal-content">
+        <div class="close" onclick="closeModal('modal12')">&times;</div>
+        <div class="lyrics">
+          <h5>
+            예수를 만난 자 새로이 눈뜨고<br />
+            예수를 아는 자 그 말씀 들으리<br />
+            예수를 따르는 자 어느 곳에 있어도<br />
+            주의 은혜를 담대히 선포하리라<br /><br />
+
+            예수를 만난 자 새로이 눈뜨고<br />
+            예수를 아는 자 그 말씀 들으리<br />
+            예수를 따르는 자 어느 곳에 있어도<br />
+            주의 은혜를 담대히 선포하리라<br /><br />
+
+            주님의 뜻대로 살아낸 만큼<br />
+            자유를 얻으리 살아낸 만큼<br />
+            예수의 맘으로 사랑한 만큼<br />
+            평안을 얻으리 사랑한 만큼<br /><br />
+
+            예수를 만난 자 새로이 눈뜨고<br />
+            예수를 아는 자 그 말씀 들으리<br />
+            예수를 따르는 자 어느 곳에 있어도<br />
+            주의 은혜를 담대히 선포하리라<br /><br />
+
+            주님의 뜻대로 살아낸 만큼<br />
+            자유를 얻으리 살아낸 만큼<br />
+            예수의 맘으로 사랑한 만큼<br />
+            평안을 얻으리 사랑한 만큼<br /><br />
+
+            평화 평화로다<br />
+            하늘위에서 내려오네<br />
+            그 사랑의 물결이 영원토록<br />
+            내 영혼을 덮으소서<br /><br />
+
+            평화 평화로다<br />
+            하늘위에서 내려오네<br />
+            그 사랑의 물결이 영원토록<br />
+            내 영혼을 덮으소서<br /><br />
+
+            주님의 뜻대로 살아낸 만큼<br />
+            자유를 얻으리 살아낸 만큼<br />
+            예수의 맘으로 사랑한 만큼<br />
+            평안을 얻으리 사랑한 만큼<br /><br />
+
+            주님의 뜻대로 살아낸 만큼<br />
+            자유를 얻으리 살아낸 만큼<br />
+            예수의 맘으로 사랑한 만큼<br />
+            평안을 얻으리 사랑한 만큼<br />
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div id="modal13" class="modal">
+      <div class="modal-content">
+        <div class="close" onclick="closeModal('modal13')">&times;</div>
+        <div class="lyrics">
+          <h5>
+            나보다 나를 잘 아시는 주님<br />
+            내가 주를 떠나 어디로 가겠나이까<br />
+            나 어딜 가든지 주의 손이 나를 인도하시며<br />
+            주의 오른손이 나를 붙드시리다<br /><br />
+
+            나를 창세 전부터 계획하시고<br />
+            지금까지 인도하시네<br /><br />
+
+            하나님이여 주의 생각이<br />
+            어찌 그리 보배로우신지요<br />
+            나의 생각보다 나의 뜻보다<br />
+            더 크고 놀라우신 주님<br /><br />
+
+            하나님이여 나를 살피사<br />
+            나의 마음을 다 아시오니<br />
+            나를 영원한 길로 인도하소서<br /><br />
+
+            짧은 inter<br /><br />
+
+            나보다 나를 잘 아시는 주님<br />
+            내가 주를 떠나 어디로 가겠나이까<br />
+            나 어딜 가든지 주의 손이 나를 인도하시며<br />
+            주의 오른손이 나를 붙드시리다<br /><br />
+
+            나를 창세 전부터 계획하시고<br />
+            지금까지 인도하시네<br /><br />
+
+            하나님이여 주의 생각이<br />
+            어찌 그리 보배로우신지요<br />
+            나의 생각보다 나의 뜻보다<br />
+            더 크고 놀라우신 주님<br /><br />
+
+            하나님이여 나를 살피사<br />
+            나의 마음을 다 아시오니<br />
+            나를 영원한 길로 인도하소서<br /><br />
+
+            주의 생각이<br />
+            어찌 그리 보배로우신지요<br />
+            나의 생각보다 나의 뜻보다<br />
+            더 크고 놀라우신 주님<br /><br />
+
+            하나님이여 나를 살피사<br />
+            나의 마음을 다 아시오니<br />
+            나를 영원한 길로 인도하소서<br />
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div id="modal22" class="modal">
+      <div class="modal-content">
+        <div class="close" onclick="closeModal('modal22')">&times;</div>
+        <div class="lyrics">
+          <h5>
+            (solo)<br />
+            하늘 위에 주님밖에<br />
+            내가 사모할 자 이 세상에 없네<br />
+            내 맘과 힘은 믿을 수 없네<br />
+            오직 한가지 그 진리를 믿네<br /><br />
+
+            주는 나의 힘이요<br />
+            주는 나의 힘이요<br />
+            주는 나의 힘이요<br />
+            영원히 주를 의지하리<br /><br />
+
+            주는 나의 힘이요<br />
+            주는 나의 힘이요<br />
+            주는 나의 힘이요<br />
+            영원히 주를 의지하리<br />
+            영원히<br /><br />
+
+            짧은 inter<br /><br />
+
+            하늘 위에 주님밖에<br />
+            내가 사모할 자 이 세상에 없네<br />
+            내 맘과 힘은 믿을 수 없네<br />
+            오직 한가지 그 진리를 믿네<br /><br />
+
+            주는 나의 힘이요<br />
+            주는 나의 힘이요<br />
+            주는 나의 힘이요<br />
+            영원히 주를 의지하리<br /><br />
+
+            주는 나의 힘이요<br />
+            주는 나의 힘이요<br />
+            주는 나의 힘이요<br />
+            영원히 주를 의지하리<br />
+            영원히<br /><br />
+
+            내 맘과 힘은 믿을 수 없네<br />
+            오직 한가지 그 진리를 믿네<br /><br />
+
+            key up<br />
+            주는 나의 힘이요<br />
+            주는 나의 힘이요<br />
+            주는 나의 힘이요<br />
+            영원히 주를 의지하리<br /><br />
+
+            주는 나의 힘이요<br />
+            주는 나의 힘이요<br />
+            주는 나의 힘이요<br />
+            영원히 주를 의지하리<br /><br />
+
+            영원히<br />
+            영원히<br />
+            영원히<br />
+          </h5>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "block";
+      }
+
+      function closeModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        var modals = document.getElementsByClassName("modal");
+        for (var i = 0; i < modals.length; i++) {
+          var modal = modals[i];
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
