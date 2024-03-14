@@ -132,6 +132,10 @@
   }
   
   @media (max-width: 800px) {
+    .container {
+      height: 100vh;
+    }
+
     .main {
       width: 100%;
       background-color: white;
@@ -139,6 +143,7 @@
       border: none;
       margin: 0;
       gap: 10px 10px;
+      grid-template-rows: 2fr 1fr 1fr 1fr 1fr 0.2fr;
     }
   
     .title {
