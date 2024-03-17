@@ -28,7 +28,7 @@ body {
 .main {
   display: block;
   width: 50%;
-  height: auto;
+  height: 100vh;
   border-radius: 30px;
   background-color: white;
   align-items: center;

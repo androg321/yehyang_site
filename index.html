@@ -4,21 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Dongle&family=Gowun+Dodum&family=Orbit&display=swap"
+      rel="stylesheet"
+    />
     <title>예향 다락방</title>
   </head>
   <body>
     <div class="main">
-      <div class="title">예향 다락방</div>
+      <header><div class="title">예향 다락방</div></header>
       <div class="btn_container">
-        <button onclick="location.href='equipment.html'">🎚️ 장비</button>
-        <button onclick="location.href='schedule.html'">📆 일정</button>
-        <button onclick="location.href='songs.html'">🎶 노래</button>
-        <button
+        <div class="buttons" onclick="location.href='equipment.html'">
+          <img src="./img/inventory.svg" alt="" />장비
+        </div>
+        <div onclick="location.href='schedule.html'">
+          <img src="./img/calendar.svg" alt="" />일정
+        </div>
+        <div onclick="location.href='songs.html'">
+          <img src="./img/music.svg" alt="" />노래
+        </div>
+        <div
           onclick="window.open('https://drive.google.com/drive/folders/1hiiufdzXeTfCp2f09EqkL9ot3I37mte-?usp=drive_link')"
         >
-          💻 가사 PPT
-        </button>
-        <button onclick="location.href='members.html'">😋 예향 TMI</button>
+          <img src="./img/tv.svg" alt="" />가사 PPT
+        </div>
+        <div onclick="location.href='members.html'">
+          <img src="./img/tmi.svg" alt="" />예향 TMI
+        </div>
+        <div onclick="alert('공사중입니다🙏')">
+          <img src="./img/heart.svg" alt="" />사랑나눔축제
+        </div>
+        <div style="background-color: #f9f9f9">지금은 다락방 공사중🧑‍🔧</div>
         <!-- <button
           style="background-color: rgb(198, 228, 218)"
           onclick="location.href='extra.html'"
