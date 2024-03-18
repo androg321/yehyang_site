@@ -3,13 +3,45 @@
   src: url(../font/GamjaFlower-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'omyu_pretty';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.do-hyeon-regular {
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.orbit-regular {
+  font-family: "Orbit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gowun-dodum-regular {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
-  font-family: GamjaFlower-Regular;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 body {
@@ -20,7 +52,7 @@ body {
   display: flex;
   width: 100%;
   height: auto;
-  background-color: #f2efe5;
+  background-color: #305387;
   align-items: center;
   justify-content: center;
 }
@@ -31,7 +63,7 @@ body {
   height: auto;
   margin: 20px;
   border-radius: 30px;
-  background-color: white;
+  background-color: #305387;
   align-items: center;
   justify-content: center;
 }
@@ -39,14 +71,15 @@ body {
 .title {
   width: 100%;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
   font-size: 1.6em;
   font-weight: 600;
+  font-family: 'omyu_pretty';
 }
 
 table,
 tr {
-  margin-top: 50px;
+  margin-top: 20px;
   border-collapse: collapse;
   width: 100%;
   font-size: 1.2em;
@@ -137,7 +170,7 @@ img {
     height: 100%;
     margin: 0;
     border-radius: 0;
-    background-color: #f6f4eb;
+    background-color: #dbe2ef;
   }
 
   .title {

@@ -3,6 +3,13 @@
   src: url(../font/GamjaFlower-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'omyu_pretty';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .gaegu-light {
   font-family: "Gaegu", sans-serif;
   font-weight: 300;
@@ -60,6 +67,7 @@ body {
   text-align: center;
   font-size: 1.5em;
   font-weight: 600;
+  font-family: 'omyu_pretty';
 }
 
 .name {
@@ -145,6 +153,7 @@ p {
 @media (max-width: 800px) {
   .container {
     height: 100vh;
+    background-color: #dbe2ef;
   }
 
   .main {
