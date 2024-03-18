@@ -50,7 +50,7 @@ body {
 
 .container {
   display: flex;
-  background-color: #f2efe5;
+  background-color: #dbe2ef;
   align-items: center;
   justify-content: center;
 }
@@ -89,7 +89,7 @@ th {
   font-size: 2em;
   font-weight: 800;
   /* background-color: #7b7b7e; */
-  color: #7b7b7e;
+  color: #305387;
 }
 
 td {

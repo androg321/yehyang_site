@@ -52,7 +52,7 @@ body {
   display: flex;
   width: 100%;
   height: auto;
-  background-color: #305387;
+  background-color: #dbe2ef;
   align-items: center;
   justify-content: center;
 }
@@ -63,7 +63,7 @@ body {
   height: auto;
   margin: 20px;
   border-radius: 30px;
-  background-color: #305387;
+  background-color: white;
   align-items: center;
   justify-content: center;
 }
