@@ -100,10 +100,10 @@ img {
   transition: all 0.3s;
 }
 
-/* div:nth-child(7) {
+div:nth-child(7) {
   width: fit-content;
   grid-column: 1 / 7;
-} */
+}
 
 @media (max-width: 800px) {
   body {
@@ -182,7 +182,7 @@ img {
     font-weight: 200;
   }
 
-  /* div:nth-child(7) {
+  div:nth-child(7) {
     grid-column: 1 / 4;
-  } */
+  }
 }

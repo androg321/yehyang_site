@@ -46,19 +46,21 @@ body {
   background-color: #dbe2ef;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: fit-content;
 }
 
 .main {
   display: grid;
   margin: 40px;
   width: 40%;
+  height: auto;
   border-radius: 30px;
+  padding: 20px;
   background-color: white;
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 30px 30px;
 }
 
@@ -68,6 +70,16 @@ body {
   font-size: 1.5em;
   font-weight: 600;
   font-family: 'omyu_pretty';
+}
+
+.category {
+  text-align: left;
+  align-items: left;
+  justify-content: left;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: 'omyu_pretty';
+  grid-column: 1 / 5;
 }
 
 .name {
