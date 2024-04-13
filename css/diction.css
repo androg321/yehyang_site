@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "omyu_pretty";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dovemayo_gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #dbe2ef;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: block;
+  width: 50%;
+  height: auto;
+  border-radius: 30px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.main input[type="radio"] {
+  display: none;
+}
+#tab-1:checked ~ .tab label:nth-child(1),
+#tab-2:checked ~ .tab label:nth-child(2),
+#tab-3:checked ~ .tab label:nth-child(3),
+#tab-4:checked ~ .tab label:nth-child(4) {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+}
+.content > div {
+  display: none;
+}
+#tab-1:checked ~ .content div:nth-child(1),
+#tab-2:checked ~ .content div:nth-child(2),
+#tab-3:checked ~ .content div:nth-child(3),
+#tab-4:checked ~ .content div:nth-child(4) {
+  display: block;
+}
+/* .main {
+    margin: 0 auto;
+    min-width: 1380px;
+    max-width: 100%;
+  } */
+.tab {
+  overflow: hidden;
+}
+.tab label {
+  font-family: "omyu_pretty";
+  font-size: 1.4em;
+  cursor: pointer;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  user-select: none;
+  border-radius: 30px 30px 0 0;
+  -webkit-user-select: none;
+}
+
+.content {
+  height: auto;
+}
+
+.cable {
+  padding-left: 20px;
+  padding-top: 30px;
+  font-family: "omyu_pretty";
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  font-family: "Dovemayo_gothic";
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .content > div {
+    padding: 0;
+  }
+
+  .tab label {
+    border-radius: 0 0 0 0;
+    font-weight: 200;
+  }
+}
