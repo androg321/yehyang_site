@@ -112,10 +112,10 @@ img {
   transition: all 0.3s;
 }
 
-div:nth-child(8) {
+/* div:nth-child(8) {
   width: fit-content;
   grid-column: 1 / 8;
-}
+} */
 
 @media (max-width: 800px) {
   body {
@@ -153,9 +153,9 @@ div:nth-child(8) {
     width: 100vw;
   }
 
-  .background_img {
+  /* .background_img {
     box-shadow: 5px 5px 20px 3px rgb(79, 64, 64);
-  }
+  } */
 
   .btn_container {
     display: grid;
@@ -205,7 +205,7 @@ div:nth-child(8) {
     font-weight: 200;
   }
 
-  div:nth-child(8) {
+  /* div:nth-child(8) {
     grid-column: 1 / 4;
-  }
+  } */
 }
