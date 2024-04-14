@@ -198,6 +198,11 @@ header {
     /* box-shadow: 0 0 10px rgba(109, 109, 109, 0.384); */
   }
 
+  .btn_container > div:hover {
+    background-color: rgb(228, 202, 206);
+    box-shadow: 0 0 10px rgba(109, 109, 109, 0.384);
+  }
+
   .btn_img {
     width: 20px;
     margin: 10px 10px 10px 10px;
