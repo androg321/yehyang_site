@@ -73,6 +73,10 @@ header {
   background-color: rgb(198, 209, 223);
 }
 
+.title p {
+  color: black;
+}
+
 .background_img_container {
   display: none;
 }
@@ -149,6 +153,10 @@ header {
     font-size: 2.5em;
     background-color: transparent;
     color: black;
+  }
+
+  .title p {
+    color: white;
   }
 
   .background_img_container {
