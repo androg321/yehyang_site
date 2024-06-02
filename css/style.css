@@ -151,6 +151,7 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(34, 36, 38, 0.15);
   transform: translateY(-50%);
+  font-family: "omyu_pretty";
 }
 
 table {
@@ -302,6 +303,5 @@ td {
     text-align: center;
     border-radius: 0px;
     transform: translateY(-50%);
-    font-family: "omyu_pretty";
   }
 }
