@@ -173,6 +173,38 @@ td {
   border-bottom: 1px solid black;
 }
 
+.notice {
+  display: flex;
+  width: 30%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(196, 215, 224);
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.notice > p {
+  margin: 0;
+}
+
+.site {
+  padding-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gowun Dodum", sans-serif;
+  cursor: pointer;
+}
+
+.site_name {
+  margin: 10px;
+}
+
+.site_name:hover {
+  text-decoration: underline;
+}
+
 /* div:nth-child(8) {
   width: fit-content;
   grid-column: 1 / 8;
@@ -242,7 +274,7 @@ td {
     display: grid;
     flex-direction: column;
     width: 100vw;
-    padding-top: 50px;
+    padding-top: 10px;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
@@ -317,5 +349,37 @@ td {
     text-align: center;
     border-radius: 0px;
     transform: translateY(-50%);
+  }
+
+  .notice {
+    display: flex;
+    width: auto;
+    margin: 20px 10px 10px 10px;
+    height: 5%;
+    border-radius: 10px;
+    background-color: rgb(196, 215, 224);
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  .notice > p {
+    margin: 0;
+  }
+
+  .site {
+    padding-top: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  .site_name {
+    margin: 10px;
+  }
+
+  .site_name:hover {
+    text-decoration: underline;
   }
 }
