@@ -4,8 +4,9 @@
 }
 
 @font-face {
-  font-family: 'omyu_pretty';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-family: "omyu_pretty";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,7 +34,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -74,7 +74,7 @@ body {
   padding-top: 20px;
   font-size: 1.6em;
   font-weight: 600;
-  font-family: 'omyu_pretty';
+  font-family: "omyu_pretty";
 }
 
 table,
@@ -158,6 +158,25 @@ td:nth-child(3) {
 
 img {
   width: 100%;
+}
+
+#all {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: linear-gradient(145deg, #a2d5f2, #87c1e6);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px #87c1e6, -5px -5px 10px #d0f3ff;
+  color: white;
+  cursor: pointer;
+  padding: 15px 30px;
+}
+
+#all:active {
+  box-shadow: inset 5px 5px 10px #87c1e6, inset -5px -5px 10px #d0f3ff;
+  text-align: center;
 }
 
 @media (max-width: 800px) {
