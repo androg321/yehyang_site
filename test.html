@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Metronome</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <div class="metronome">
+      <h1>Web Metronome</h1>
+
+      <!-- 노래 선택 창 -->
+      <div class="song-selector">
+        <label for="song">Select a Song:</label>
+        <select id="song">
+          <option value="song1">감사함으로</option>
+          <option value="song2">그 크신 하나님의 사랑</option>
+          <option value="song3">나는 오늘을 살리</option>
+          <option value="song4">내 모든 삶의 행동 주안에, 승리하였네</option>
+          <option value="song5">믿음과 삶</option>
+          <option value="song6">바다의 길을 하늘에 빛을</option>
+          <option value="song7">예수가 이어지길</option>
+          <option value="song8">예수 날 위해 이 땅에 오신 주</option>
+          <option value="song9">오라 우리가</option>
+          <option value="song10">작고 약한 내 모습</option>
+          <option value="song11">주님의 마음이 있는 곳</option>
+          <option value="song12">주님의 사랑</option>
+          <option value="song13">주님의 시선</option>
+          <option value="song14">주를 더 알수록</option>
+          <option value="song15">주의 사랑으로</option>
+          <option value="song16">주의 음성을 내가 들으니</option>
+          <option value="song17">주 행하신 위대한 일</option>
+          <option value="song18">하늘의 것을 구하게 하소서</option>
+        </select>
+      </div>
+
+      <div class="controls">
+        <button id="decrease">-</button>
+        <input type="number" id="bpm" value="120" min="30" max="300" />
+        <button id="increase">+</button>
+      </div>
+      <button id="startStop">시작</button>
+      <div class="visuals">
+        <!-- 네 개의 원 추가 -->
+        <div class="beat" id="beat1"></div>
+        <div class="beat" id="beat2"></div>
+        <div class="beat" id="beat3"></div>
+        <div class="beat" id="beat4"></div>
+      </div>
+    </div>
+
+    <!-- 소리 파일 추가 -->
+    <audio id="tickSound" src="sound.mp3"></audio>
+
+    <script src="test.js"></script>
+  </body>
+</html>
