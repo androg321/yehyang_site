@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Metronome</title>
+    <style>
+      /* 간단한 스타일 추가 */
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .controls {
+        margin: 20px;
+      }
+      .visuals {
+        display: flex;
+        gap: 10px;
+      }
+      .beat {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: lightgray;
+      }
+      .active {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web Metronome</h1>
+
+    <div class="controls">
+      <button id="decrease">-</button>
+      <input type="number" id="bpm" value="120" min="30" max="300" />
+      <button id="increase">+</button>
+      <button id="startStop">Start</button>
+    </div>
+
+    <div class="visuals">
+      <div class="beat" id="beat1"></div>
+      <div class="beat" id="beat2"></div>
+      <div class="beat" id="beat3"></div>
+      <div class="beat" id="beat4"></div>
+    </div>
+
+    <script>
+      const bpmInput = document.getElementById("bpm");
+      const startStopButton = document.getElementById("startStop");
+      const increaseButton = document.getElementById("increase");
+      const decreaseButton = document.getElementById("decrease");
+      const beats = [
+        document.getElementById("beat1"),
+        document.getElementById("beat2"),
+        document.getElementById("beat3"),
+        document.getElementById("beat4"),
+      ];
+
+      const context = new (window.AudioContext || window.webkitAudioContext)();
+      let tickBuffer; // 사운드 버퍼
+      let currentBeat = 0;
+      let bpm = parseInt(bpmInput.value);
+      let isPlaying = false;
+      let nextNoteTime = 0;
+
+      // 오디오 버퍼를 로드하는 함수
+      function loadTickSound() {
+        fetch("sound.mp3") // 사운드 파일 경로
+          .then((response) => response.arrayBuffer())
+          .then((data) => context.decodeAudioData(data))
+          .then((buffer) => {
+            tickBuffer = buffer;
+          });
+      }
+
+      // 현재 비트를 재생하는 함수
+      function playTick(time) {
+        const source = context.createBufferSource();
+        source.buffer = tickBuffer;
+        source.connect(context.destination);
+        source.start(time);
+
+        // 시각적 효과
+        beats.forEach((beat) => beat.classList.remove("active"));
+        beats[currentBeat].classList.add("active");
+        currentBeat = (currentBeat + 1) % beats.length;
+      }
+
+      function scheduler() {
+        while (nextNoteTime < context.currentTime + 0.1) {
+          playTick(nextNoteTime);
+          nextNoteTime += 60.0 / bpm;
+        }
+        if (isPlaying) {
+          requestAnimationFrame(scheduler);
+        }
+      }
+
+      function startMetronome() {
+        currentBeat = 0;
+        nextNoteTime = context.currentTime;
+        scheduler();
+      }
+
+      function stopMetronome() {
+        isPlaying = false;
+        beats.forEach((beat) => beat.classList.remove("active"));
+      }
+
+      startStopButton.addEventListener("click", () => {
+        if (isPlaying) {
+          stopMetronome();
+          startStopButton.textContent = "Start";
+        } else {
+          isPlaying = true;
+          startMetronome();
+          startStopButton.textContent = "Stop";
+        }
+      });
+
+      increaseButton.addEventListener("click", () => {
+        bpm = Math.min(bpm + 1, 300);
+        bpmInput.value = bpm;
+      });
+
+      decreaseButton.addEventListener("click", () => {
+        bpm = Math.max(bpm - 1, 30);
+        bpmInput.value = bpm;
+      });
+
+      bpmInput.addEventListener("change", () => {
+        const newBPM = parseInt(bpmInput.value);
+        if (!isNaN(newBPM) && newBPM >= 30 && newBPM <= 300) {
+          bpm = newBPM;
+        } else {
+          bpmInput.value = bpm;
+        }
+      });
+
+      // 페이지 로드 시 사운드 버퍼 로드
+      window.onload = loadTickSound;
+    </script>
+  </body>
+</html>
