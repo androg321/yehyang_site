@@ -62,7 +62,7 @@
         document.getElementById("beat4"),
       ];
 
-      const context = new (window.AudioContext || window.webkitAudioContext)();
+      let context;
       let tickBuffer; // 사운드 버퍼
       let currentBeat = 0;
       let bpm = parseInt(bpmInput.value);
@@ -114,6 +114,11 @@
       }
 
       startStopButton.addEventListener("click", () => {
+        if (!context) {
+          context = new (window.AudioContext || window.webkitAudioContext)(); // 사용자 상호작용 시점에 AudioContext 초기화
+          loadTickSound(); // 오디오 버퍼 로드
+        }
+
         if (isPlaying) {
           stopMetronome();
           startStopButton.textContent = "Start";
@@ -142,9 +147,6 @@
           bpmInput.value = bpm;
         }
       });
-
-      // 페이지 로드 시 사운드 버퍼 로드
-      window.onload = loadTickSound;
     </script>
   </body>
 </html>
