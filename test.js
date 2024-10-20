@@ -1,11 +1,16 @@
 let isRunning = false;
-let audioCtx;
+let audioCtx = null; // AudioContext는 사용자가 상호작용한 후에 생성
 let nextNoteTime = 0.0; // 다음 클릭 소리 재생 시간
 let intervalId;
 const lookahead = 25.0; // 25ms마다 스케줄링
 const scheduleAheadTime = 0.1; // 100ms 미리 스케줄링
 
 document.getElementById("start-stop").addEventListener("click", function () {
+  if (!audioCtx) {
+    // 사용자 상호작용 시에만 AudioContext 초기화 (모바일 정책 준수)
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  }
+
   if (isRunning) {
     stopMetronome();
   } else {
@@ -16,11 +21,6 @@ document.getElementById("start-stop").addEventListener("click", function () {
 function startMetronome() {
   isRunning = true;
   document.getElementById("start-stop").textContent = "Stop";
-
-  // 오디오 컨텍스트 초기화
-  if (!audioCtx) {
-    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-  }
 
   nextNoteTime = audioCtx.currentTime;
   intervalId = setInterval(scheduler, lookahead); // 일정 주기로 스케줄링
