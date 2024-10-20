@@ -2,8 +2,10 @@ let isRunning = false;
 let audioCtx = null;
 let nextNoteTime = 0.0; // 다음 클릭 소리 재생 시간
 let intervalId;
+let currentBeat = 0; // 현재 박자
 const lookahead = 25.0; // 25ms마다 스케줄링
 const scheduleAheadTime = 0.1; // 100ms 미리 스케줄링
+const circles = document.querySelectorAll(".circle");
 
 document.getElementById("start-stop").addEventListener("click", function () {
   if (!audioCtx) {
@@ -29,6 +31,11 @@ document.getElementById("decrease-bpm").addEventListener("click", function () {
   if (bpm > 40) {
     document.getElementById("bpm").value = bpm - 1;
   }
+});
+
+document.getElementById("song").addEventListener("change", function () {
+  const selectedBPM = this.value;
+  document.getElementById("bpm").value = selectedBPM; // 노래 선택 시 BPM 설정
 });
 
 function startMetronome() {
@@ -68,10 +75,19 @@ function playClick(time) {
 
   envelope.gain.setTargetAtTime(0, time, 0.015);
 
-  // 시각적 효과 추가 (동그라미 크기 변화)
-  const visualCircle = document.getElementById("visual-circle");
-  visualCircle.style.transform = "scale(1.2)"; // 클릭 시 동그라미가 커짐
-  setTimeout(() => {
-    visualCircle.style.transform = "scale(1)"; // 동그라미가 다시 작아짐
-  }, 100); // 100ms 후에 크기가 줄어듦
+  // 동그라미 시각적 효과 업데이트
+  updateVisualEffect();
+}
+
+function updateVisualEffect() {
+  // 모든 동그라미 초기화
+  circles.forEach((circle) => {
+    circle.style.transform = "scale(1)";
+  });
+
+  // 현재 박자에 해당하는 동그라미를 크게
+  circles[currentBeat].style.transform = "scale(1.5)";
+
+  // 박자 순서 업데이트 (0 -> 1 -> 2 -> 3 -> 0 순환)
+  currentBeat = (currentBeat + 1) % circles.length;
 }
