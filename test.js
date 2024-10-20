@@ -40,7 +40,7 @@ document.getElementById("song").addEventListener("change", function () {
 
 function startMetronome() {
   isRunning = true;
-  document.getElementById("start-stop").textContent = "Stop";
+  document.getElementById("start-stop").textContent = "정지";
 
   nextNoteTime = audioCtx.currentTime;
   intervalId = setInterval(scheduler, lookahead); // 일정 주기로 스케줄링
@@ -48,7 +48,7 @@ function startMetronome() {
 
 function stopMetronome() {
   isRunning = false;
-  document.getElementById("start-stop").textContent = "Start";
+  document.getElementById("start-stop").textContent = "시작";
   clearInterval(intervalId); // 타이머 해제
 }
 
