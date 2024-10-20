@@ -10,21 +10,20 @@
     <div class="metronome-container">
       <h1>Metronome</h1>
       <div class="controls">
-        <label for="bpm">BPM: </label>
         <button id="decrease-bpm">-</button>
         <input type="number" id="bpm" value="100" min="40" max="240" readonly />
         <button id="increase-bpm">+</button>
-        <button id="start-stop">Start</button>
       </div>
       <div class="song-selection">
         <label for="song">Select a song:</label>
         <select id="song">
-          <option value="100">Song 1 (100 BPM)</option>
-          <option value="120">Song 2 (120 BPM)</option>
-          <option value="140">Song 3 (140 BPM)</option>
-          <option value="160">Song 4 (160 BPM)</option>
+          <option value="100">Song 1</option>
+          <option value="120">Song 2</option>
+          <option value="140">Song 3</option>
+          <option value="160">Song 4</option>
         </select>
       </div>
+      <button id="start-stop">Start</button>
       <div id="visual-circles">
         <div class="circle"></div>
         <div class="circle"></div>

@@ -60,7 +60,6 @@ function scheduler() {
 }
 
 function playClick(time) {
-  // 오디오 클릭 생성
   const osc = audioCtx.createOscillator(); // 오실레이터 생성
   const envelope = audioCtx.createGain(); // 게인 노드 생성 (음량 조절)
 
@@ -80,14 +79,13 @@ function playClick(time) {
 }
 
 function updateVisualEffect() {
-  // 모든 동그라미 초기화
   circles.forEach((circle) => {
     circle.style.transform = "scale(1)";
+    circle.style.backgroundColor = "#ddd";
   });
 
-  // 현재 박자에 해당하는 동그라미를 크게
   circles[currentBeat].style.transform = "scale(1.5)";
+  circles[currentBeat].style.backgroundColor = "#333";
 
-  // 박자 순서 업데이트 (0 -> 1 -> 2 -> 3 -> 0 순환)
   currentBeat = (currentBeat + 1) % circles.length;
 }
