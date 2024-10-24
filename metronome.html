@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>예향 다락방</title>
+    <link rel="stylesheet" href="./css/metronome_style.css" />
+  </head>
+  <body>
+    <div class="metronome-container">
+      <div class="controls">
+        <button id="decrease-bpm">-</button>
+        <input type="number" id="bpm" value="110" min="40" max="240" readonly />
+        <button id="increase-bpm">+</button>
+      </div>
+
+      <div id="visual-circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <h6 style="margin-top: 50px">무음 모드를 해제해야 소리가 나옵니다</h6>
+      <h6>화면이 꺼지면 소리도 멈춥니다</h6>
+
+      <button id="start-stop">시작</button>
+    </div>
+    <div class="song-selection">
+      <select id="song">
+        <option value="110">감사로 주님께 나가세(110bpm)</option>
+        <option value="132">오라 우리가(132bpm)</option>
+        <option value="66">온땅의 주인(66bpm)</option>
+        <option value="138">주님의 사랑(138bpm)</option>
+        <option value="102">주의 음성을 내가 들으니(102bpm)</option>
+        <option value="64">청년의 기도(64bpm)</option>
+      </select>
+    </div>
+    <script src="metronome.js"></script>
+  </body>
+</html>
