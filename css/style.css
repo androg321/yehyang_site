@@ -274,7 +274,7 @@ td {
     display: grid;
     flex-direction: column;
     width: 100vw;
-    padding-top: 10px;
+    padding: 10px;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
